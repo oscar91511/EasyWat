@@ -1,1 +1,1 @@
-# EasyWat
+# EasyEat
