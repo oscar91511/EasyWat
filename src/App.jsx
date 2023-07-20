@@ -4,7 +4,7 @@ import Siderbar from "./components/shared/Siderbar";
 function App() {
   return (
     <>
-      <div className="bg-stone-900/40 w-full min-h-screen"> 
+      <div className="bg-stone-700 w-full min-h-screen"> 
         <Siderbar />
       </div>
     </>
