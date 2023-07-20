@@ -7,29 +7,31 @@ import {
   RiNotification3Line,
   RiSettings4Fill,
   RiLogoutCircleLine,
+  RiHome6Line,
 } from "react-icons/ri";
 
 const Siderbar = () => {
   return (
     <div
       className="text-white bg-[#1F1D2B] fixed 
-  left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl"
+  left-0 top-0 w-28 h-full flex flex-col justify-between py-6"
     >
+      <div
+          className="flex justify-center text-5xl  text-grey-300 uppercase
+     font-bold text-center my-5 animate-pulse "
+        >
+          <RiStore3Fill />
+        </div>
       <div>
-      <h1
-        className="text-2xl  text-grey-300 uppercase
-     font-bold text-center my-5"
-      >
-        logo
-      </h1>
-        <ul className="pl-4  bg-stone-900/40">
+        
+        <ul className="pl-4 mt-2 bg-stone-900/40">
           <li className=" bg-stone-700 p-4 rounded-tl-xl rounded-bl-xl">
             <a
               className=" flex justify-center bg-orange-600 rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
         text-center"
               href="#"
             >
-              <RiStore3Fill className="text-2xl " />
+              <RiHome6Line className="text-2xl " />
             </a>
           </li>
           <li className=" hover:bg-stone-700  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
