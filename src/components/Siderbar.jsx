@@ -10,22 +10,24 @@ import {
   RiHome6Line,
 } from "react-icons/ri";
 
-const Siderbar = () => {
+const Siderbar = (props) => {
+  const { showMenu } = props;
+
   return (
     <div
-      className="text-white bg-[#1F1D2B] fixed 
-  left-0 top-0 w-28 h-full flex flex-col justify-between py-6"
+      className={`text-white bg-[#1F1D2B] fixed 
+        lg:left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-br-xl rounded-tr-xl
+         z-50 transition-all ${showMenu ? "left-0" : "-left-full" } `}
     >
       <div
-          className="flex justify-center text-5xl  text-grey-300 uppercase
+        className="flex justify-center text-5xl  text-grey-300 uppercase
      font-bold text-center my-5 animate-pulse "
-        >
-          <RiStore3Fill />
-        </div>
+      >
+        <RiStore3Fill />
+      </div>
       <div>
-        
         <ul className="pl-4 mt-2 bg-stone-900/40">
-          <li className=" bg-stone-700 p-4 rounded-tl-xl rounded-bl-xl">
+          <li className=" bg-[#334155]p-4 rounded-tl-xl rounded-bl-xl">
             <a
               className=" flex justify-center bg-orange-600 rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
         text-center"
@@ -34,7 +36,7 @@ const Siderbar = () => {
               <RiHome6Line className="text-2xl " />
             </a>
           </li>
-          <li className=" hover:bg-stone-700  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
+          <li className=" hover:bg-[#334155]  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
               className=" flex justify-center  rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
         text-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white"
@@ -43,7 +45,7 @@ const Siderbar = () => {
               <RiPercentLine className="text-2xl " />
             </a>
           </li>
-          <li className=" hover:bg-stone-700  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
+          <li className=" hover:bg-[#334155]  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
               className=" flex justify-center  rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
         text-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white"
@@ -52,7 +54,7 @@ const Siderbar = () => {
               <RiPieChartLine className="text-2xl " />
             </a>
           </li>
-          <li className=" hover:bg-stone-700  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
+          <li className=" hover:bg-[#334155] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
               className=" flex justify-center  rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
         text-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white"
@@ -61,7 +63,7 @@ const Siderbar = () => {
               <RiMailLine className="text-2xl " />
             </a>
           </li>
-          <li className=" hover:bg-stone-700  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
+          <li className=" hover:bg-[#334155]  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
               className=" flex justify-center  rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
         text-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white"
@@ -70,7 +72,7 @@ const Siderbar = () => {
               <RiNotification3Line className="text-2xl " />
             </a>
           </li>
-          <li className=" hover:bg-stone-700  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
+          <li className=" hover:bg-[#334155]  p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
               className=" flex justify-center  rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
         text-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white"

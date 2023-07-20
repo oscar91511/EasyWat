@@ -1,14 +1,16 @@
 import "./App.css";
-import Siderbar from "./components/shared/Siderbar";
 
-function App() {
+import React from "react";
+import Siderbar from "./components/Siderbar";
+import ShowMenu from "./components/ShowMenu";
+
+const App = () => {
   return (
-    <>
-      <div className="bg-stone-700 w-full min-h-screen"> 
-        <Siderbar />
-      </div>
-    </>
+    <div className="bg-[#334155] w-full min-h-screen">
+      <Siderbar />
+      <ShowMenu />
+    </div>
   );
-}
+};
 
 export default App;
