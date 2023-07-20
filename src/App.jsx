@@ -1,16 +1,14 @@
-import './App.css'
-import Siderbar from './components/shared/Siderbar'
-
+import "./App.css";
+import Siderbar from "./components/shared/Siderbar";
 
 function App() {
-  
-
   return (
     <>
-     
-      <Siderbar />
+      <div className="bg-stone-900/40 w-full min-h-screen"> 
+        <Siderbar />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
