@@ -56,7 +56,7 @@ const Siderbar = (props) => {
           </li>
           <li className=" hover:bg-[#334155] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
-              className=" flex justify-center  rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
+              className=" justify-center flex rounded-tl-xl rounded-bl-xl rounded-xl p-4 box-content text-3xl
         text-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white"
               href="#"
             >
